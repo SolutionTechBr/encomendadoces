@@ -1,0 +1,84 @@
+.imagem{
+    position: relative;
+    bottom: 100px;
+    left: 1100px;
+    max-width: 400px;
+    height: 365px;
+    border: 4px solid #072E52;
+}
+
+.text-pequeno {
+    position: relative;
+    top: 180px;
+    margin-left: 80px;
+    font-family: 'Inter, sans-serif';
+    font-weight: 300;
+    font-size: 22px; 
+}  
+
+.text-grande{
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    z-index: 10;
+    font-size: 120px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 00px;
+}
+
+.seta {
+    position: relative;
+    bottom: 355px;
+    left: 0px;
+    max-width: 557px;
+}
+
+.setaseta {
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+    max-width: 132px;
+    animation: deslocamento 1s ease-in-out infinite;
+}
+  
+/* Crie a animação */
+@keyframes deslocamento {
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(20px); /* Defina a quantidade de deslocamento desejada */
+}
+100% {
+    transform: translateY(0);
+}
+}
+  
+  /* Aplique a animação à imagem */
+.setaseta:hover {
+animation: deslocamento 1s ease-in-out; /* Defina a duração e o timing da animação */
+}
+  
+  
+
+
+@media screen and (max-width: 1000px) {
+   .blob{
+    width: 15rem; height: 15rem; border-radius: 15rem; background: linear-gradient(197.37deg, #7450DB -0.38%, rgba(138, 234, 240, 0) 101.89%), linear-gradient(115.93deg, #1c77ff 4.86%, rgba(62, 180, 246, 0.33) 38.05%, rgba(62, 235, 246, 0) 74.14%), radial-gradient(56.47% 76.87% at 6.92% 7.55%, rgba(62, 136, 246, 0.7) 0%, rgba(62, 158, 246, 0.182) 52.16%, rgba(62, 246, 246, 0) 100%), linear-gradient(306.53deg, #21cbcb 19.83%, rgba(46, 228, 227, 0) 97.33%); background-blend-mode: normal,normal,normal,normal,normal,normal; filter: blur(72px);
+    bottom: 7rem;
+} 
+}
+
+@media screen and (max-width: 768px) {
+   .blob{
+    width: 15rem; height: 15rem; border-radius: 15rem; background: linear-gradient(197.37deg, #7450DB -0.38%, rgba(138, 234, 240, 0) 101.89%), linear-gradient(115.93deg, #1c77ff 4.86%, rgba(62, 180, 246, 0.33) 38.05%, rgba(62, 235, 246, 0) 74.14%), radial-gradient(56.47% 76.87% at 6.92% 7.55%, rgba(62, 136, 246, 0.7) 0%, rgba(62, 158, 246, 0.182) 52.16%, rgba(62, 246, 246, 0) 100%), linear-gradient(306.53deg, #21cbcb 19.83%, rgba(46, 228, 227, 0) 97.33%); background-blend-mode: normal,normal,normal,normal,normal,normal; filter: blur(72px);
+    bottom: 4rem;
+} 
+}
+
+@media screen and (max-width: 480px) {
+   .blob{
+    width: 12rem; height: 12rem; border-radius: 12rem; background: linear-gradient(197.37deg, #7450DB -0.38%, rgba(138, 234, 240, 0) 101.89%), linear-gradient(115.93deg, #1c77ff 4.86%, rgba(62, 180, 246, 0.33) 38.05%, rgba(62, 235, 246, 0) 74.14%), radial-gradient(56.47% 76.87% at 6.92% 7.55%, rgba(62, 136, 246, 0.7) 0%, rgba(62, 158, 246, 0.182) 52.16%, rgba(62, 246, 246, 0) 100%), linear-gradient(306.53deg, #21cbcb 19.83%, rgba(46, 228, 227, 0) 97.33%); background-blend-mode: normal,normal,normal,normal,normal,normal; filter: blur(72px);
+    bottom: 6rem;
+} 
+}
