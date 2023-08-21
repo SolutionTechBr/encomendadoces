@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeadingStyle.scss";
 
+
 function Header({ lanches, setLanchesFiltrados }) {
   function filtrarPorCategoria(categoria) {
     if (categoria === "todos") {
@@ -17,13 +18,15 @@ function Header({ lanches, setLanchesFiltrados }) {
 
   return (
     <div className="header">
-      <img src="caminho_para_a_imagem.png" alt="Logo" />
       <form>
         <button onClick={() => filtrarPorCategoria("todos")}>Todos</button>
-        <button onClick={() => filtrarPorCategoria("Cone")}>Cone Trufado</button>
         <button onClick={() => filtrarPorCategoria("Pote")}>Bolo de Pote</button>
+        <button onClick={() => filtrarPorCategoria("Cone")}>Cone Trufado</button>
+        <button onClick={() => filtrarPorCategoria("Fatia")}>Fatia de Bolo</button>
+        <button onClick={() => filtrarPorCategoria("Pudin")}>Pudin</button>
+        <button onClick={() => filtrarPorCategoria("Barra")}>Barra Trufada</button>
+        <button onClick={() => filtrarPorCategoria("Docinho")}>Docinhos</button>
         {/* Adicione mais botões para outras categorias se necessário */}
-        <input type="text" placeholder="Pesquisar..." />
       </form>
     </div>
   );

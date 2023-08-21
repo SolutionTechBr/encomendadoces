@@ -1,5 +1,5 @@
 import React from 'react'
-import './Heading.scss'
+import './HeadingStyle.scss'
 
 const Heading = ({ heading }) => {
     return (
@@ -8,4 +8,3 @@ const Heading = ({ heading }) => {
 }
 
 export default Heading
-

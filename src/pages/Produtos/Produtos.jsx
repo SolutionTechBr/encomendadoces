@@ -5,6 +5,11 @@ import Cart from "../../components/Cards/Cart";
 import produtosData from "../../data/data.json"; 
 
 function ProductsPage() {
+
+  document.title = 'Malimpensa Doces | Produtos';
+
+
+
   const [lanches, setLanches] = useState([]);
   const [lanchesCarrinho, setLanchesCarrinho] = useState([]);
   const [LanchesFiltrados, setLanchesFiltrados] = useState([]);
@@ -31,7 +36,6 @@ function ProductsPage() {
     <div className="App">
       <Header lanches={lanches} setLanchesFiltrados={setLanchesFiltrados} />
       <main>
-        <h2>Página de Produtos</h2>
         <div className="containerGeral">
           <Card
             adicionarAoCarrinho={adicionarAoCarrinho}

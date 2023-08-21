@@ -14,12 +14,12 @@ const Categorias = () => {
       </div>
 
       <div className='my-20 flex flex-wrap gap-10 items-center justify-evenly'>
-        <Card2 title="Google" company={"Bolo de Pote"} image={"./images/google.jpg"}/>
-        <Card2 title="Amazon" company={"Cone Trufado"} image={"./images/amazon.jpg"} />
-        <Card2 title="Microsoft" company={"Fatia de bolo"} image={"./images/microsoft.png"} />
-        <Card2 title="Google" company={"Pudin"} image={"./images/google.jpg"}/>
-        <Card2 title="Amazon" company={"Barra de Chocolate"} image={"./images/amazon.jpg"} />
-        <Card2 title="Microsoft" company={"Docinho para festa"} image={"./images/microsoft.png"} />
+        <Card2 title="Google" company={"Bolo de Pote"} image={"./images/google.jpg"} link={"/produtos"}/>
+        <Card2 title="Amazon" company={"Cone Trufado"} image={"./images/amazon.jpg"} link={"/produtos"} />
+        <Card2 title="Microsoft" company={"Fatia de bolo"} image={"./images/microsoft.png"} link={"/produtos"}/>
+        <Card2 title="Google" company={"Pudin"} image={"./images/google.jpg"} link={"/produtos"}/>
+        <Card2 title="Amazon" company={"Barra de Chocolate"} image={"./images/amazon.jpg"}  link={"/produtos"}/>
+        <Card2 title="Microsoft" company={"Docinho para festa"} image={"./images/microsoft.png"}  link={"/produtos"}/>
       </div>
     </div>
   )                                               
