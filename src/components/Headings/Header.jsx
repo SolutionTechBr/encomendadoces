@@ -1,20 +1,18 @@
-import React from "react";
 import "./HeadingStyle.scss";
+import React, { useState } from 'react';
 
 
 function Header({ lanches, setLanchesFiltrados }) {
+  const [selectedCategory, setSelectedCategory] = useState("todos");
+
   function filtrarPorCategoria(categoria) {
-    if (categoria === "todos") {
-      setLanchesFiltrados(lanches);
-    } else {
-      const lanchesFiltrados = lanches.filter(item => item.category === categoria);
-      setLanchesFiltrados(lanchesFiltrados);
-    }
+    const lanchesFiltrados = lanches.filter(item => categoria === "todos" || item.category === categoria);
+    setLanchesFiltrados(lanchesFiltrados);
   }
 
-  function naoCarregarAPagina(event) {
-    event.preventDefault();
-  }
+  
+  console.log("Selected Category:", selectedCategory); // Verifique o valor aqui
+
 
   return (
     <div className="header">

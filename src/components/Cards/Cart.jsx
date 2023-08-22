@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Aside,
-  DivCardCarrinho,
-  DivNomeCarrinho,
-  DivSacolaVazia,
-  Sectionn,
-} from "./StyleCart.js";
+import './StyleCart.scss';
 
-function Cart({ deletarItemCarrinho, lanchesCarrinho, deletarTodositens }) {
+function Cart({ deletarItemCarrinho, lanchesCarrinho }) {
   let total = lanchesCarrinho.reduce(
     (valorInicial, valoresDosProdutos) =>
       valorInicial + valoresDosProdutos.price,

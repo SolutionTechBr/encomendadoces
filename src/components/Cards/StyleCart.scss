@@ -1,67 +1,55 @@
-import styled from "styled-components";
+// StyleCart.scss
 
-export const DivNomeCarrinho = styled.div`
-  width: 100%;
-  height: 65px;
-  background: #27ae60;
-  border-radius: 8px 8px 3px 3px;
+$mainRedColor: rgb(252, 165, 165);
+$lightGrayColor: #f5f5f5;
+$borderColor: #e0e0e0;
+$redColor: red;
+$grayColor: #828282;
 
-  display: flex;
-  align-items: center;
-
-  h3 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffffff;
-    margin-left: 6%;
-  }
-`;
-
-export const Sectionn = styled.section`
-  background: #f5f5f5;
-  border-radius: 0px 0px 10px 10px;
+.Sectionn {
+  background-color: $mainRedColor;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
-  border-bottom: 4px solid #e0e0e0;
+  border-bottom: 4px solid $borderColor;
   margin-top: 5%;
   width: 100%;
-`;
+}
 
-export const DivSacolaVazia = styled.div`
+.DivSacolaVazia {
   width: 100%;
   height: 180px;
-  background: #f5f5f5;
-  border-radius: 0px 0px 10px 10px;
-
+  background: $lightGrayColor;
+  border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   h3 {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
   }
+
   span {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #828282;
+    color: $grayColor;
   }
-`;
+}
 
-export const DivCardCarrinho = styled.div`
+.DivCardCarrinho {
   margin-bottom: 5%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
   height: 80px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $borderColor;
   border-radius: 10px;
-
   margin-left: 5%;
 
   .imgCart {
@@ -74,26 +62,25 @@ export const DivCardCarrinho = styled.div`
   .btnRemoverCardCarrinho {
     width: auto;
     height: auto;
-  }
-  .btnRemoverCardCarrinho:hover {
-    background-color: red;
-    color: white;
-  }
-`;
 
-export const Aside = styled.aside`
-  border: 2px solid #f5f5f5;
-  border-radius: 0px 0px 5px 5px;
+    &:hover {
+      background-color: $redColor;
+      color: white;
+    }
+  }
+}
+
+.Aside {
+  border: 2px solid $lightGrayColor;
+  border-radius: 0 0 5px 5px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25%;
   min-width: 320px;
-
-  background: #f5f5f5;
-
-  border: 2px solid #e5e5e5;
+  background: $lightGrayColor;
+  border: 2px solid $borderColor;
 
   .divTotal {
     display: flex;
@@ -109,11 +96,12 @@ export const Aside = styled.aside`
       font-size: 18px;
       line-height: 24px;
     }
+
     p {
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
-      color: #828282;
+      color: $grayColor;
     }
   }
 
@@ -123,15 +111,16 @@ export const Aside = styled.aside`
     justify-content: center;
     width: 95%;
     height: 60px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid $borderColor;
     border-radius: 8px;
-    background: #e0e0e0;
-    color: #828282;
+    background: $borderColor;
+    color: $grayColor;
     margin-bottom: 6%;
     cursor: pointer;
-    :hover {
-      background-color: red;
-      color: #f5f5f5;
+
+    &:hover {
+      background-color: $redColor;
+      color: $lightGrayColor;
       transition: all 500ms;
     }
   }
@@ -139,4 +128,4 @@ export const Aside = styled.aside`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-`;
+}
